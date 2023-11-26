@@ -1,11 +1,16 @@
+import React from 'react';
+import { Tooltip } from '@mui/material';
 import './card.css';
 
 export default ({
    imgSrc,
    followersCount,
-   label
+   label,
+   songs
 }) => {
-    return (<div className='card-wrapper'>
+    return (
+      <Tooltip title="songs" placement="top" arrow >
+    <div className='card-wrapper'>
         <div className='card'>
            <div className='card-img-frame'>
               <img className='card-img' src={imgSrc} />
@@ -17,5 +22,7 @@ export default ({
            </div>
         </div>
         <p className='card-label'>{label}</p>
-        </div>)
+        </div>
+        </Tooltip>
+    )
 }
