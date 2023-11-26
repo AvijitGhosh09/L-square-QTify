@@ -9,7 +9,7 @@ export default ({
    songs
 }) => {
     return (
-      <Tooltip title="songs" placement="top" arrow >
+      <Tooltip  title={`${songs} songs`} placement="top" arrow >
     <div className='card-wrapper'>
         <div className='card'>
            <div className='card-img-frame'>

@@ -21,7 +21,7 @@ const [isCollapsed, setIsCollapsed] = useState(false)
             imgSrc={cardData.image}
             label={cardData.title}
             followersCount={cardData.follows}
-            // songs = {cardData.songs}
+            songs = {cardData.songs ? cardData.songs.length:null}
             />)}
         </div>}
     </div>
