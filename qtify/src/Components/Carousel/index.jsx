@@ -33,6 +33,7 @@ export default ({ navId, data}) =>{
             label={cardData.title}
             followersCount={cardData.follows}
             songs={ cardData.songs ? cardData.songs.length:null}
+            // songs={ cardData.songs ? cardData.songs.length:cardData.songs}
             /></SwiperSlide>)}
     </Swiper>
 

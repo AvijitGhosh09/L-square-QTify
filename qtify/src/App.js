@@ -5,7 +5,9 @@ import Navbar from './Components/Navbar';
 import HeroSection from './Components/HeroSection';
 import Section from './Components/Section';
 import FilterSection from './Components/FilterSection';
-import {useEffect} from 'react'
+import {useEffect} from 'react';
+import Accordian from './Components/Accordian';
+
 
 
 const ENDPOINT = 'https://qtify-backend-labs.crio.do/'
@@ -52,7 +54,9 @@ function App() {
     }
 
    }}/>
-   
+
+    <Accordian/>
+    
   </>
   );
 }
